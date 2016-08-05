@@ -1214,3 +1214,15 @@ def calculate_nunique(df):
     import pandas as pd
     r = {col : df[col].nunique() for col in df.columns}
     return pd.DataFrame(r,index=["nunique"]).T    
+def add_quantile(df, nom_col):
+    """
+    cree une colonne quantilisee dans la df de la colonne passee en param
+    """
+    # Param
+    col_quantile     = df[nom_col]
+    new_col          = "quantile_{0}".format(nom_col)
+    bins             = [0,0.05, 0.25, 0.5, 0.75, 0.95, 1]
+    # algo
+    quantiles        = col_quantile.quantile(bins)
+    df[new_col]      = pd.cut(col_quantile, quantiles)
+    return df
