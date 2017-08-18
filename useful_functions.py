@@ -1,4 +1,15 @@
 #-*- coding: utf-8 -*-
+def transform_csv_into_excel(path_csv):
+    """
+    
+    """
+    import pandas as pd
+    output_path = path_csv[:-4]+".xls"
+    writer = pd.ExcelWriter(output_path)
+    df = pd.read_csv(path_csv)
+    df.to_excel(writer)
+    writer.save()
+
 def reject_outliers(data, m = 2.):
     import numpy as np
     d = np.abs(data - np.median(data))
