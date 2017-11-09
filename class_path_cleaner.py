@@ -33,7 +33,7 @@ class path_cleaner:
         if actual_dirname != cleaned_dirname:
             import os
             os.rename(actual_dirname, cleaned_dirname)
-            print ("rename = %s to %s"% (actual_dirname, cleaned_dirname))
+            print(("rename = %s to %s"% (actual_dirname, cleaned_dirname)))
         return cleaned_dirname
 
 

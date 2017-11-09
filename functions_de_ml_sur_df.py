@@ -29,9 +29,8 @@ def get_n_indices_set(df, n,  classe, colonne = -1):
             if smallest_n > 5:
                 datasets.append(indices)
     except Exception as e :
-        print "pbm in get_n_indices_set : %s"%e
+        print("pbm in get_n_indices_set : %s"%e)
     return datasets
-
 """
     SVM grid search
 """
@@ -54,18 +53,17 @@ def svm_grid_search(df, Y):
                     "max_iter"       : [-1]                              , 
                     "random_state"   : [None]                            }
     
-    print "-"*30, "\n svm_grid_search"; sys.stdout.flush()
+    print("-"*30, "\n svm_grid_search"); sys.stdout.flush()
     
     """
         Search Grid
     """
     grid    = grid_search.GridSearchCV(SVC(), parameters, verbose=0, scoring='f1_weighted')
     try :grid.fit(df, Y)
-    except Exception as e : print "[svm_grid_search - 2] : %s"%e ; print "x_train, y_train : ", x_train, y_train
+    except Exception as e : print("[svm_grid_search - 2] : %s"%e) ; print("x_train, y_train : ", x_train, y_train)
 
-    print " best_score_ = %.2f with =  %s "%(grid.best_score_, grid.best_estimator_ ) ; sys.stdout.flush()    
+    print(" best_score_ = %.2f with =  %s "%(grid.best_score_, grid.best_estimator_ )) ; sys.stdout.flush()    
     return grid.best_estimator_
-
 """
     KNN grid search
 """
@@ -82,19 +80,16 @@ def knn_grid_search(df, Y):
                     "leaf_size"      : [1,3 ]                                    }
                     
     grid_type = "knn_grid_search"
-    print "-"*30, "\n %s"%grid_type; sys.stdout.flush()
+    print("-"*30, "\n %s"%grid_type); sys.stdout.flush()
     """
         Search Grid
     """
     grid    = grid_search.GridSearchCV(KNeighborsClassifier(), parameters, verbose=0, scoring='f1_weighted')
     try :grid.fit(df, Y)
-    except Exception as e : print "[%s - 2] : %s"%(grid_type,e) ; print "x_train, y_train : ", x_train, y_train
+    except Exception as e : print("[%s - 2] : %s"%(grid_type,e)) ; print("x_train, y_train : ", x_train, y_train)
 
-    print " best_score_ = %.2f with =  %s "%(grid.best_score_, grid.best_estimator_ ) ; sys.stdout.flush()    
+    print(" best_score_ = %.2f with =  %s "%(grid.best_score_, grid.best_estimator_ )) ; sys.stdout.flush()    
     return grid.best_estimator_
-
-
-
 """
     Random Forest
 """
@@ -125,7 +120,7 @@ def RandomForest_grid_search(df, Y):
                     #"warm_start"           : [False]           }
     grid_type = "RandomForestClassifier"
     
-    print "-"*30, "\n %s"%grid_type; sys.stdout.flush()
+    print("-"*30, "\n %s"%grid_type); sys.stdout.flush()
     """
         Search 
     """
@@ -135,17 +130,15 @@ def RandomForest_grid_search(df, Y):
     grid         = grid_search.GridSearchCV(RandomForestClassifier(), parameters, verbose=1, scoring='f1')
     
     try :grid.fit(df, Y)
-    except Exception as e : print "[%s - 2] : %s"%(grid_type,e) 
+    except Exception as e : print("[%s - 2] : %s"%(grid_type,e)) 
     
-    print " best_score_ %s with =  %s "%( grid.best_score_,  grid.best_estimator_ ) ; sys.stdout.flush()    
+    print(" best_score_ %s with =  %s "%( grid.best_score_,  grid.best_estimator_ )) ; sys.stdout.flush()    
     return grid.best_estimator_
-
 """
     Affinity Propagation
 """
 def Affinityscorer(estimator, X, y):
     return float(sum(estimator.predict(X)==y))/len(y)
-    
 def AffinityPropagation_grid_search(df, Y):
     import sys, pickle
     from sklearn.cross_validation   import cross_val_score, train_test_split
@@ -158,7 +151,7 @@ def AffinityPropagation_grid_search(df, Y):
                     "max_iter"      : [10,20,50,100,150,200]    }
                     
     grid_type = "AffinityPropagation"
-    print "-"*30, "\n %s"%grid_type; sys.stdout.flush()
+    print("-"*30, "\n %s"%grid_type); sys.stdout.flush()
 
     """
         Search 
@@ -169,14 +162,12 @@ def AffinityPropagation_grid_search(df, Y):
     
     try :
         grid.fit(df, Y)
-        print "fitted"; sys.stdout.flush()
-    except Exception as e : print "[%s - 2] : %s"%(grid_type,e) 
+        print("fitted"); sys.stdout.flush()
+    except Exception as e : print("[%s - 2] : %s"%(grid_type,e)) 
     
         
-    print " best_score_ %s with =  %s "%( grid.best_score_,  grid.best_estimator_ ) ; sys.stdout.flush()    
+    print(" best_score_ %s with =  %s "%( grid.best_score_,  grid.best_estimator_ )) ; sys.stdout.flush()    
     return grid.best_estimator_
-
-
 def draw_confusion_matrix(y_test, predictions, title):
     cm    = confusion_matrix(y_test, predictions)
     accur = accuracy_score  (y_test, predictions)
@@ -187,7 +178,6 @@ def draw_confusion_matrix(y_test, predictions, title):
     plt.suptitle ('Confusion matrix (Accuracy of %.2f) for [%s]'%(accur,title))
     plt.colorbar ()
     plt.show     ()
-
 def draw_roc_curve(fitted_c, x_test, y_test, title):
     from sklearn.metrics import roc_curve, auc
     c                                        = fitted_c
@@ -204,7 +194,6 @@ def draw_roc_curve(fitted_c, x_test, y_test, title):
     plt.ylabel ('Recall')
     plt.xlabel ('Fall-out')
     plt.show()
-
 def multi_class_roc(c, X, y, classes, title):
     # imports 
     import numpy                  as     np
@@ -257,7 +246,6 @@ def multi_class_roc(c, X, y, classes, title):
     plt.title  ( title)
     plt.legend ( loc="lower right")
     plt.show   ( )
-
 def binary_multi_roc_curve(c, X, y, t ):
     import numpy                    as      np
     from   scipy                    import interp
@@ -267,8 +255,8 @@ def binary_multi_roc_curve(c, X, y, t ):
     from   sklearn.cross_validation import StratifiedKFold
     
     
-    X.index = range(0, X.shape[0])
-    y.index = range(0, y.shape[0])
+    X.index = list(range(0, X.shape[0]))
+    y.index = list(range(0, y.shape[0]))
     n_samples, n_features = X.shape
     X          = np.c_[X]
     cv         = StratifiedKFold(y, n_folds=6)

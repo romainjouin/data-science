@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
-__author__ = 'nouveau'
-def analyse_column(X, eol="\n"):
+def analyse_df(df):
+    import pandas as pd
+    r = pd.DataFrame()
+    for col in df.columns:
+        try:
+            r = r.append(analyse_column(df[col], col))
+        except: pass
+
+    return r
+def analyse_column(X, nom_col="coucou"):
     """
     Calcul des statistiques descriptives sur une série (min, max, moyenne).
 
@@ -10,58 +18,56 @@ def analyse_column(X, eol="\n"):
     Output: str
 
     """
+    import pandas as pd
     try:
-        to_print  ="-"*15+"%s"%eol
-        to_print  += "Quantitatif"
-        to_print  += "shape : %s%s"%(X.shape, eol)
-        to_print  += "min : %s%s"%(X.min(), eol)
-        to_print  += "max : %s%s"%(X.max(), eol)
-        to_print  += "min index: %s%s"%(X.index.min(), eol)
-        to_print  += "max index: %s%s"%(X.index.max(), eol)
+        df              = pd.DataFrame()
+        df["nb_ligne"]  = pd.Series(X.shape[0])
+        df["min"]       = X.min()
+        df["max"]       = X.max()
+        df["min_index"] = X.index.min()
+        df["max_index"] = X.index.max()
+        df["mean"]      = X.mean()
+        df["median"]    = X.median()
+
+
+        try     :df["var"]= X.var()
+        except Exception as e  : print("pbm var : %s"%e)
+        try     :df["ecart_type"]= X.std()
+        except Exception as e  : print("pbm srtd : %s"%e)
+        try     :df["EcAbs"]= EcAbs(X)
+        except Exception as e  : print("pbm Ecabs : %s"%e)
+        try     :df["Kolmogorov stat"], df["Kolmogorov pvalue"]= Kolmogorov(X)
+        except Exception as e  : print("pbm Kolmogorov : %s"%e)
+        try     : df["Indice_de_Gini"] = Indice_de_Gini(X)
+        except Exception as e  : print("pbmm gini :  %s" %e)
 
     except Exception as e:
-        print "analyse_column: pbm = {%s}%s"%(e, eol)
-    try: to_print  += tendances_centrales(X, eol)
-    except Exception as e: print "analyse_column, analyse centrale error = %s"%e
-    try : to_print  += dispersion(X, eol)
-    except Exception as e: print "analyse_column, dispersion error = %s"%e
+        print("analyse_column: pbm = {%s}%s" % (e, eol))
+    df.index = [nom_col]
 
-    try : to_print  += concentration(X, eol)
-    except Exception as e: print "analyse_column, concentration error = %s"%e
-
-    try : to_print  += test_lois(X, eol)
-    except Exception as e: print "analyse_column, test_loiserror = %s"%e
-
-    try : to_print  += EcAbs(X.values, eol)
-    except Exception as e: print "analyse_column, EcAbs(X.values) error = %s"%e
-
-
-    return to_print
+    return df
 def tendances_centrales(Y, eol="\n"):
     """
     Retourne une chaine de caractère décrivant la tendance centrale d'une série
 
     Input : pandas series
-    
+
     Ouput : string
     """
+    moyenne, mediane = Y.mean(),  Y.median()
 
-    to_print  = "Tendances centrales%s"%eol
-    to_print  += "mean : %.2f %s"%(Y.mean(), eol)
-    to_print  += "median : %.2f%s"%(Y.median(), eol)
     try:
-        to_print  += "mode : %.2f%s"%(Y.mode(), eol)
+        mode =  Y.mode()
     except:
-        to_print  += "mode : undetermined %s"%(eol)
+        mode = False
 
-    return to_print
-# In[609]:
+    return moyenne, mediane , mode
 def dispersion(X, eol="\n"):
     """
     Retourne une chaine de caractère décrivant la dispersion d'une série
 
     Input : pandas series
-    
+
     Ouput : string
 
     """
@@ -72,26 +78,23 @@ def dispersion(X, eol="\n"):
     to_print  += "Etendue : [%.2f, %.2f]%s"%(X.min(), X.max(), eol)
     to_print  += "Ecart absolu moyen : %s %s"%(EcAbs(X), eol)
     return to_print
-
-def concentration(Y, eol="\n"):
+def Indice_de_Gini(Y):
     """
-    Retourne une chaine de caractère décrivant l'indice de gini' d'une série
+    Retourne une chaine de caractère décrivant l'indice de gini' d'une série (concentration)
 
     Input : pandas series
-    
+
     Ouput : string
 
-    """    
-    to_print  = "Concentration%s"%eol
-    to_print  += "Indice de Gini : %.2f%s"%(gini(Y), eol)
-    return to_print
+    """
 
+    return gini(Y)
 def gini(list_of_values):
     """
     Calcul l'indice de gini d'une série
 
     Input : pandas series
-    
+
     Ouput : float
 
     """
@@ -103,25 +106,22 @@ def gini(list_of_values):
         fair_area = height * len(list_of_values) / 2
 
     return (fair_area - area) / float(fair_area)
-
-def test_lois(X, eol="\n"):
+def Kolmogorov(X):
     """
     Calcul le test de Kolmogorov
 
     Input : pandas series
-    
+
     Ouput : string
 
     """
     from scipy import stats
-    to_print   = "Loi (Kolmogorov)%s"%eol
-    a,b        = stats.kstest(X, 'norm')
-    to_print  += "norm = (%.2f, %.2f)%s" % (a,b, eol)
-    return to_print
-
-def EcAbs(L, eol="\n"):
+    r = stats.kstest(X, 'norm')
+    print (r)
+    return r
+def EcAbs(L):
     """
-    Calcul de l'écart absolu moyen 
+    Calcul de l'écart absolu moyen
     L : np.ndarray
     Ouput : string
     """
@@ -131,11 +131,8 @@ def EcAbs(L, eol="\n"):
     m = L.sum() / len(L)
     M = [abs(x - m) for x in L]
     EcAbs_ = sum(M, 0.0) / len(M)
-    to_print  = "Ecart Absolu moyen%s"%eol
-    to_print  += "%s%s"%(EcAbs_, eol)
-    return to_print
 
-
+    return EcAbs_
 def smooth(x,window_len=125,window='hamming'):
     """
     Smooth a serie thanks to hamming method.
@@ -155,7 +152,6 @@ def smooth(x,window_len=125,window='hamming'):
             w=eval('np.'+window+'(window_len)')
     y=np.convolve(w/w.sum(),s,mode='same')
     return y[window_len:-window_len+1]
-
 def MSE(target, predictions):
     """
     Test predictor quality with Mean Square Error
@@ -185,16 +181,15 @@ def proba(ar):
     """
     values = set(ar)
     nb = len(ar)
-    print nb
+    print(nb)
     proba = [ar.count(v)/nb for v in values]
-    return dict(zip(values, proba))
-
+    return dict(list(zip(values, proba)))
 def RunLinearModel(data, cible, temps ):
     import statsmodels.formula.api as smf
     import numpy as np
     import pandas
-    print cible in data.columns
-    print temps in data.columns
+    print(cible in data.columns)
+    print(temps in data.columns)
     requete = "%s ~ %s"%(cible, temps)
     model = smf.ols(requete, data=data)
     results = model.fit()
@@ -212,7 +207,6 @@ def get_needed_sample_size(original_pop, accepted_error=0.05):
     e = original_pop-1
     d = a+b*e
     return  c/d
-
 def get_confidence(original_pop, sample_size):
     """
     According to a reference population size and a test sample size, return the confidence we can have on the result.
@@ -229,10 +223,38 @@ def get_confidence(original_pop, sample_size):
     c = float(a)/b
     d = sqrt(c)
     return  float(d)
-
-
 def min_max(time_serie):
     """
     return a tuple with the min and max of time serie index
     """
     return (time_serie.index.min(), time_serie.index.max())
+def reject_outliers(data, m=2.):
+    import numpy as np
+    d = np.abs(data - np.median(data))
+    mdev = np.median(d)
+    s = d / mdev if mdev else 0.
+    return data[s < m]
+def get_outliers(data, m=2.):
+    import numpy as np
+    d = np.abs(data - np.median(data))
+    mdev = np.median(d)
+    s = d / mdev if mdev else 0.
+    return data[s > m]
+def frange(start, stop, step):
+    """
+    Create an array containing numbers from [start] to [stop] with a step of [step]
+
+    Parameters:
+        start: int
+        stop : int
+        step : int
+
+    Return:
+        r : array of int
+    """
+    r = [start]
+    i = start
+    while i < stop:
+        i += step
+        r.extend([i])
+    return r

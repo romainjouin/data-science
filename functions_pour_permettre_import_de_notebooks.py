@@ -1,20 +1,7 @@
 
-# coding: utf-8
-
-# In[1]:
-
-import io, os, sys, types
-
-
-# In[2]:
-
-from IPython import get_ipython
-from nbformat import read
-from IPython.core.interactiveshell import InteractiveShell
-
-
-# In[3]:
-
+"""
+Functions to load notebooks as if they were repos of modules / functions.
+"""
 def find_notebook(fullname, path=None):
     """find a notebook, given its fully qualified name and an optional path
 
@@ -34,9 +21,6 @@ def find_notebook(fullname, path=None):
         if os.path.isfile(nb_path):
             return nb_path
 
-
-# In[4]:
-
 class NotebookLoader(object):
     """Module Loader for Jupyter Notebooks"""
     def __init__(self, path=None):
@@ -47,7 +31,7 @@ class NotebookLoader(object):
         """import a notebook as a module"""
         path = find_notebook(fullname, self.path)
 
-        print ("importing Jupyter notebook from %s" % path)
+        print(("importing Jupyter notebook from %s" % path))
 
         # load the notebook object
         with io.open(path, 'r', encoding='utf-8') as f:
@@ -78,9 +62,6 @@ class NotebookLoader(object):
         finally:
             self.shell.user_ns = save_user_ns
         return mod
-
-
-# In[5]:
 
 class NotebookFinder(object):
     """Module finder that locates Jupyter Notebooks"""
