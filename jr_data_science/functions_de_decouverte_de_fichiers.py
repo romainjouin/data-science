@@ -399,23 +399,23 @@ def split_excels(path_to_excel_file, output_dir="./", n_worksheet=3):
     print("Going to read : %s" % path);
     sys.stdout.flush()
     start_reading = time.time()                             			; print("Reading")                                 ; sys. stdout.flush()
-    data           = pd.read_excel( \path, sheetname= list(range( n_worksheet)))  		;
-    print(
-    "Read in %s"%(time.time() - start_reading)); sys.stdout.flush()
+    data           = pd.read_excel( path, sheetname= list(range( n_worksheet)))
+    print("Read in %s"%(time.time() - start_reading)); sys.stdout.flush()
     for worksheet in list(data.
                                   keys()):
-        try:print("Wk %s"% worksheet); sys.stdout. flush()
-                output_path   = \
-                "%s%s_worksheet_%s.csv"%(output_dir, short_filename,
-                                         worksheet) ; print("Saving into %s"%(
-            output_path)) ;sys. \
-            stdout.flush() ;  start_saving = time.time()
-            data[worksheet].to_csv ( output_path, encoding='UTF-8')                           ; print( "Saved in %s"%(time . time()-
-                                                                                                                 start_saving))
-        except \
-            Exception as e:print( "Erreur in worksheet %s"% worksheet) ; sys.stdout.flush()
-        print(e[:100]) ; sys. \
-        stdout.flush()
+        try:
+            print("Wk %s"% worksheet); sys.stdout. flush()
+            output_path   = "%s%s_worksheet_%s.csv"%(output_dir, short_filename,worksheet)
+            print("Saving into %s"%(output_path))
+            sys.stdout.flush()
+            start_saving = time.time()
+            data[worksheet].to_csv ( output_path, encoding='UTF-8')
+            print( "Saved in %s"%(time . time()-start_saving))
+        except Exception as e:
+            print( "Erreur in worksheet %s"% worksheet)
+            sys.stdout.flush()
+        print(e[:100])
+        sys.stdout.flush()
 def change_commas_to_dots_in_dir(directory_path):
     """
         Retrieve all the csv under a root dir, and apply the change_commas_to_dots function to each.
@@ -478,12 +478,7 @@ def find_delimiter(path_to_csv_file):
             if max_ ==test_semicolon : return semicolon
             if max_ == test_tab       : return tab
 
-            return \
- \
- \ \
-
-
-None
+            return None
 def get_headers(path_to_csv_file):
     """
         Open a csv file and create a striped array of the first line splitted by auto-detected separator.
@@ -593,11 +588,11 @@ def count_separator(file_path, delimiter=','):
                 num_line += 1
                 nb_delimiter = line.count(delimiter)
                 if nb_delimiter != last_nb_delimiter:
-                    print("%s/%s," % (num_line, nb_delimiter), end=' ')
+                    print("%s/%s," % (num_line, nb_delimiter))
                     last_nb_delimiter = nb_delimiter
                     output.write(line)
                 if num_line % 500000 == 0:
-                    print(num_line, " ", end=' ');
+                    print(num_line, " ")
                     sys.stdout.flush()
 def strip_csvs(directory_path):
     """

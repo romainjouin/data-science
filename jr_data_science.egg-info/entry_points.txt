@@ -1,0 +1,3 @@
+[console_scripts]
+proclame-sm = jr_data_science.core:proclamer
+

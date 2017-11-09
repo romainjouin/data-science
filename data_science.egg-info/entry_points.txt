@@ -1,0 +1,3 @@
+[console_scripts]
+proclame-sm = data_science.core:proclamer
+

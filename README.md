@@ -2,7 +2,7 @@
 A set of useful functions for day-to-day python datascience project.
 
 # Description
-A few modules who work together to automatize some routine meet each day on a data-science project.
+A few modules who work together to automatize some routine meet each day on a jr_data_science project.
 
 1. decouverte.py : 
 
