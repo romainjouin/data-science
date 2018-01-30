@@ -785,3 +785,26 @@ def dico_from_directory(dir_path):
     for path in csv_paths:
         print("'':'%s'," % (ntpath.basename(path)))
     print("}")
+def get_directory_paths(directory, extension=None):
+    """
+    Generate the directory names in a directory
+    tree by walking the tree either top-down or bottom-up. For each
+    directory in the tree rooted at directory top (including top itself),
+    it yields a 3-tuple (dirpath, dirnames, filenames).
+    """
+    import os, ntpath
+    assert(os.path.isdir(directory)), "The 'directory' parameter is not a directory (%s)"%(directory)
+
+    directory_paths = []  # List which will store all of the full filepaths.
+    # Walk the tree.
+    for root, directories, files in os.walk(directory):
+        for directory in directories:
+            # Join the two strings in order to form the full filepath.
+            directory = os.path.join(root, directory)
+
+            if not ntpath.basename(directory).startswith("."):
+                directory_paths.append(directory)  # Add it to the list.
+
+    if extension:return [x for  x in directory_paths if x.endswith(extension) ]
+
+    return directory_paths  # Self-explanatory.
