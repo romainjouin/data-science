@@ -1,4 +1,29 @@
 # -*- coding: utf-8 -*-
+def to_excel(df):
+    lines = ["" for i in range(1000)]
+    sep = "|"
+    columns = df.columns
+    for col in columns:
+        i =0
+        lines[i] += "%s%s%s"%(col, sep, sep)
+        i+=1
+        lines[i] += "nunique%s%s%s"%(sep, df[col].nunique(), sep)
+        i+=1
+        lines[i] += "n_na%s%s%s"%(sep, df[col].isnull().sum(), sep)
+        if df[col].nunique() < 50:
+            counts = df[col].value_counts(normalize=True)
+            for k in counts.index:
+                v = counts[k]
+                v = "%.2f"%(v)
+                v = v.replace(".", ",")
+                i+=1
+                lines[i] += "%s%s%s%s"%(k,sep, v,sep)
+        while (i<len(lines)-1):
+            i+=1
+            lines[i]+="%s%s"%(sep, sep)
+            
+    return "\n".join(lines)
+
 def analyse_df(df):
     import pandas as pd
     r = pd.DataFrame()
