@@ -16,3 +16,22 @@ A few modules who work together to automatize some routine meet each day on a jr
 3. useful_functions.py:
 
   How to get all the csvs under a dir ? How to compile a multi-worksheet excel file into one big csv ? Here you have some tool to do so !
+
+
+
+
+import pandas as pd
+import os
+from collections import Counter
+import numpy as np; 
+
+import seaborn as sns; 
+import matplotlib.dates as mdates
+import random
+from functools import reduce
+
+np.random.seed(0)
+sns.set()
+%matplotlib inline
+sns.set_style("white")
+sns.set_palette("husl")
