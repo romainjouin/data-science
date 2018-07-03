@@ -192,6 +192,15 @@ def white_rotate():
     plt.show()
     print() 
 
+
+def global_imports(modulename,shortname = None, asfunction = False):
+    if shortname is None:
+        shortname = modulename
+    if asfunction is False:
+        globals()[shortname] = __import__(modulename)
+    else:
+        globals()[shortname] = eval(modulename + "." + shortname)
+
 def setting_jupyter():
     """
     import several useful things.
@@ -200,6 +209,7 @@ def setting_jupyter():
     import importlib
     import matplotlib.pyplot as plt
     import seaborn as sns
+    global_imports("seaborn", "sns")
     sns.set(style="ticks", color_codes=True)
     sns.set(style="ticks", color_codes=True)
     get_ipython().magic(u'pylab inline')
