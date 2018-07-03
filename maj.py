@@ -7,7 +7,7 @@ git_commit  = ['git','commit', '-m', "\'{version}\'".format(version=jr_data_scie
 git_push    = ['git', 'push', 'origin']
 twine       = ['twine', 'upload', '--skip-existing', 'dist/*']
 pip_upgrade = ['pip','install','--ignore-installed','--no-cache-dir','jr_data_science']
-commands = [update_pypi, git_add, git_commit,  git_push, twine, pip_upgrade ]
+commands = [update_pypi, git_add, git_commit,  git_push, twine] #, pip_upgrade ]
 for bash_command in commands :
     print ("== =="*10)
     print(" ".join(bash_command))
@@ -23,3 +23,6 @@ for bash_command in commands :
         print("error = ")
         to_print = "\n".join(str(error ).split("\\n"))
         print(to_print)
+
+
+print("You can now type : pip install --ignore-installed --no-cache-dir jr_data_science")
