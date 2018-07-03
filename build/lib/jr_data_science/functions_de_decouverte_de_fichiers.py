@@ -459,7 +459,7 @@ def dico_from_two_col_tsv(fsv_path, separator ="\t"):
             dico_[k] = v
 
     return dico_
-def find_delimiter(path_to_csv_file, encoding="utf-8"):
+def find_delimiter(path_to_csv_file, encoding="utf-8", debug=False):
     """
         Test delimiters ([,], [;], [\t]) and send back the one more likely to be.
 
@@ -470,6 +470,7 @@ def find_delimiter(path_to_csv_file, encoding="utf-8"):
     with open(path_to_csv_file, encoding="utf-8") as csv_file:
         for headers in csv_file:
             occurences = [len(headers.split(x)) for x in sep_to_test]
+            if debug: print(occurences)
             max_       = occurences.index(max(occurences))
             return sep_to_test[max_]
 
