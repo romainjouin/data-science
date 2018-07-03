@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b11cf0-c256-45c3-9c47-232c86937f3a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maj.py" afterPath="$PROJECT_DIR$/maj.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/__init__.py" afterPath="$PROJECT_DIR$/jr_data_science/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maj.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maj.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maj.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -88,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jr_data_science/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -180,10 +179,10 @@
         <option value="$PROJECT_DIR$/build/lib/data_science/functions_pour_analyser_des_df.py" />
         <option value="$PROJECT_DIR$/jr_data_science/functions_de_decouverte_de_fichiers.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/jr_data_science/__init__.py" />
         <option value="$PROJECT_DIR$/envoyer_sur_pypi.sh" />
         <option value="$PROJECT_DIR$/maj.sh" />
         <option value="$PROJECT_DIR$/maj.py" />
+        <option value="$PROJECT_DIR$/jr_data_science/__init__.py" />
       </list>
     </option>
   </component>
@@ -291,6 +290,11 @@
             <path>
               <item name="data-science" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-science" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-science" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-science" type="462c0819:PsiDirectoryNode" />
+              <item name="jr_data_science" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -727,14 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jr_data_science/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/listes_grise_noire_pays.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -774,6 +770,14 @@
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jr_data_science/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
