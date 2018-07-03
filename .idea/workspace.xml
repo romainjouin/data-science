@@ -4,6 +4,7 @@
     <list default="true" id="c1b11cf0-c256-45c3-9c47-232c86937f3a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/__init__.py" afterPath="$PROJECT_DIR$/jr_data_science/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/useful_functions.py" afterPath="$PROJECT_DIR$/jr_data_science/useful_functions.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -177,12 +178,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class_extra_pandas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jr_data_science/class_extra_pandas.py">
+      <file leaf-file-name="functions_de_stats_sur_df.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jr_data_science/functions_de_stats_sur_df.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-77">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="259">
+              <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
+              <folding>
+                <element signature="e#8722#8859#0" expanded="false" />
+                <element signature="e#8894#9031#0" expanded="false" />
+                <element signature="e#9067#9377#0" expanded="false" />
+                <element signature="e#9067#9274#1" expanded="false" />
+                <element signature="e#9333#9364#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,11 +204,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="functions_pour_analyser_des_df.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jr_data_science/functions_pour_analyser_des_df.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="804" column="27" lean-forward="false" selection-start-line="804" selection-start-column="4" selection-end-line="804" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="useful_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jr_data_science/useful_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -227,21 +244,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listes_grise_noire_pays.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/listes_grise_noire_pays.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="maj.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="195">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -346,8 +353,8 @@
         <option value="$PROJECT_DIR$/maj.sh" />
         <option value="$PROJECT_DIR$/jr_data_science/functions_de_decouverte_de_fichiers.py" />
         <option value="$PROJECT_DIR$/jr_data_science/blueprint.py" />
-        <option value="$PROJECT_DIR$/jr_data_science/useful_functions.py" />
         <option value="$PROJECT_DIR$/maj.py" />
+        <option value="$PROJECT_DIR$/jr_data_science/useful_functions.py" />
         <option value="$PROJECT_DIR$/jr_data_science/__init__.py" />
       </list>
     </option>
@@ -629,33 +636,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jr_data_science/functions_pour_analyser_des_df.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="804" column="27" lean-forward="false" selection-start-line="804" selection-start-column="4" selection-end-line="804" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jr_data_science/functions_de_ml_sur_df.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jr_data_science/functions_de_stats_sur_df.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
-          <folding>
-            <element signature="e#8722#8859#0" expanded="false" />
-            <element signature="e#8894#9031#0" expanded="false" />
-            <element signature="e#9067#9377#0" expanded="false" />
-            <element signature="e#9067#9274#1" expanded="false" />
-            <element signature="e#9333#9364#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,6 +705,64 @@
           <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jr_data_science/class_extra_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/envoyer_sur_pypi.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listes_grise_noire_pays.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maj.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="927" column="4" lean-forward="false" selection-start-line="927" selection-start-column="4" selection-end-line="927" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,69 +944,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jr_data_science/class_extra_pandas.py">
+    <entry file="file://$PROJECT_DIR$/jr_data_science/functions_de_stats_sur_df.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="259">
+          <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
+          <folding>
+            <element signature="e#8722#8859#0" expanded="false" />
+            <element signature="e#8894#9031#0" expanded="false" />
+            <element signature="e#9067#9377#0" expanded="false" />
+            <element signature="e#9067#9274#1" expanded="false" />
+            <element signature="e#9333#9364#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jr_data_science/functions_pour_analyser_des_df.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="804" column="27" lean-forward="false" selection-start-line="804" selection-start-column="4" selection-end-line="804" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jr_data_science/useful_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/envoyer_sur_pypi.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listes_grise_noire_pays.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maj.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blueprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="927" column="4" lean-forward="false" selection-start-line="927" selection-start-column="4" selection-end-line="927" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

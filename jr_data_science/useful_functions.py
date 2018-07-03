@@ -203,7 +203,6 @@ def setting_jupyter():
     sns.set(style="ticks", color_codes=True)
     sns.set(style="ticks", color_codes=True)
     get_ipython().magic(u'pylab inline')
-    %matplotlib inline
     import pandas as pd
     import jr_data_science as jr
     global functions_de_decouverte_de_fichiers
