@@ -192,3 +192,23 @@ def white_rotate():
     plt.show()
     print() 
 
+def setting_jupyter():
+    """
+    import several useful things.
+    """
+    global plt, sns, pd, jr, importlib
+    import importlib
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    sns.set(style="ticks", color_codes=True)
+    sns.set(style="ticks", color_codes=True)
+    get_ipython().magic(u'pylab inline')
+    %matplotlib inline
+    import pandas as pd
+    import jr_data_science as jr
+    global functions_de_decouverte_de_fichiers
+    global class_extra_pandas
+    global useful_functions
+    from jr_data_science import functions_de_decouverte_de_fichiers
+    from jr_data_science import class_extra_pandas
+    from jr_data_science import useful_functions

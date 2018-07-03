@@ -2,6 +2,7 @@ MANIFEST.in
 README.md
 setup.py
 jr_data_science/__init__.py
+jr_data_science/blueprint.py
 jr_data_science/class_extra_pandas.py
 jr_data_science/class_path_cleaner.py
 jr_data_science/function_rechercher_api_google_map.py
