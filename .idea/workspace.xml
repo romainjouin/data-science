@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b11cf0-c256-45c3-9c47-232c86937f3a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maj.py" afterPath="$PROJECT_DIR$/maj.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/__init__.py" afterPath="$PROJECT_DIR$/jr_data_science/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -237,11 +237,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maj.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maj.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -259,7 +259,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jr_data_science/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -347,8 +347,8 @@
         <option value="$PROJECT_DIR$/jr_data_science/functions_de_decouverte_de_fichiers.py" />
         <option value="$PROJECT_DIR$/jr_data_science/blueprint.py" />
         <option value="$PROJECT_DIR$/jr_data_science/useful_functions.py" />
-        <option value="$PROJECT_DIR$/jr_data_science/__init__.py" />
         <option value="$PROJECT_DIR$/maj.py" />
+        <option value="$PROJECT_DIR$/jr_data_science/__init__.py" />
       </list>
     </option>
   </component>
@@ -957,21 +957,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/maj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jr_data_science/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
