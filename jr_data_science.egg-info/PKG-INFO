@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: jr-data-science
-Version: 0.0.3
+Version: 0.1.2
 Summary: Quelques functions pour la data science.
-Home-page: https://github.com/romainjouin/data_science
+Home-page: https://github.com/romainjouin/data-science
 Author: Romain Jouin
 Author-email: romain.jouin@gmail.com
 License: WTFPL

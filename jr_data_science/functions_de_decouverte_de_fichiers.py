@@ -254,6 +254,7 @@ def get_all_specific_paths_under_dir(directory_path, wanted_end=".csv"):
         Return: array
             Array of paths (csv as defaults).
     """
+    import os
     files_paths = []
     for dirname, dirnames, filenames in os.walk(directory_path):
         for filename in filenames:
@@ -458,27 +459,21 @@ def dico_from_two_col_tsv(fsv_path, separator ="\t"):
             dico_[k] = v
 
     return dico_
-def find_delimiter(path_to_csv_file):
+def find_delimiter(path_to_csv_file, encoding="utf-8"):
     """
         Test delimiters ([,], [;], [\t]) and send back the one more likely to be.
 
         Usage :
             Useful to find the delimiter of a csv file.
     """
-    coma = ","
-    semicolon = ";"
-    tab = "\t"
-    with open(path_to_csv_file) as csv_file:
+    sep_to_test = [",", ";", "\t", "|"]
+    with open(path_to_csv_file, encoding="utf-8") as csv_file:
         for headers in csv_file:
-            test_comma = len(headers.split(coma 	))
-            test_semicolon 	= len(headers.split(semicolon ))
-            test_tab 	    = len(headers.split(tab 	  ))
-            max_            = max([test_comma, test_semicolon, test_tab])
-            if max_ == test_comma     : return coma
-            if max_ ==test_semicolon : return semicolon
-            if max_ == test_tab       : return tab
+            occurences = [len(headers.split(x)) for x in sep_to_test]
+            max_       = occurences.index(max(occurences))
+            return sep_to_test[max_]
 
-            return None
+
 def get_headers(path_to_csv_file):
     """
         Open a csv file and create a striped array of the first line splitted by auto-detected separator.

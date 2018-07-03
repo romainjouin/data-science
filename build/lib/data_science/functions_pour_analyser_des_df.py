@@ -2,7 +2,7 @@
 
 __author__ = 'romain.jouin@gmail.com'
 
-from    functions_de_decouverte_de_fichiers import *
+from    jr_data_science.functions_de_decouverte_de_fichiers import *
 import  time
 
 

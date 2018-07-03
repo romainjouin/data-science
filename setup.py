@@ -50,7 +50,7 @@ setup(
     include_package_data=True,
 
     # Une url qui pointe vers la page officielle de votre lib
-    url='https://github.com/romainjouin/data_science',
+    url='https://github.com/romainjouin/data-science',
 
     # Il est d'usage de mettre quelques metadata à propos de sa lib
     # Pour que les robots puissent facilement la classer.

@@ -46,6 +46,51 @@ def analyse_column(X, nom_col="coucou"):
     df.index = [nom_col]
 
     return df
+def calculate_unique_by_files(array_path: "tableau") -> "pd.df":
+    """
+    Pour chaque fichier passer en paramètre, calcul calculate_unique_null_not_null
+    et renvoie une df avec toutes les infos.
+    return : df
+    """
+    import pandas as pd
+    result = False
+    for path in array_path:
+        try:
+            df = calculate_unique_by_file(path)
+            if isinstance(result, bool):
+                result = df
+            else:
+                result = result.append(df)
+        except Exception as e:
+            print(path)
+            print(e)
+            df = False
+            pass
+    return result
+def calculate_unique_by_file(csv_path: "str", **kwg) -> "pd.df":
+    """
+    Créer une df et Appelle calculate_unique_null_not_null dessus.
+    return : df
+    """
+    import pandas as pd
+    from jr_data_science.functions_pour_analyser_des_df import calculate_unique_null_not_null
+    df = get_df(csv_path, **kwg)
+    df = calculate_unique_null_not_null(df)
+    df["file"] = csv_path
+    df["column"] = df.index
+    return df
+def get_df(csv_path:"str", sep:"bool"=False, index_col:"bool"=False)->"df":
+    """
+    Renvoie une dataframe.
+    """
+    import pandas as pd
+    from jr_data_science.functions_de_decouverte_de_fichiers import find_delimiter
+    if not sep:
+        sep = find_delimiter(csv_path)
+    if not index_col:
+        index_col = None
+    df  = pd.DataFrame.from_csv(csv_path, index_col=index_col, sep=sep)
+    return df
 def tendances_centrales(Y, eol="\n"):
     """
     Retourne une chaine de caractère décrivant la tendance centrale d'une série
