@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b11cf0-c256-45c3-9c47-232c86937f3a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/data_science-0.0.1-py3.5.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/data_science-0.0.2-py3.5.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/data_science-0.0.3-py3.5.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/jr_data_science-0.0.3-py3.5.egg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_01.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_01.npy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_02.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_02.npy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_05.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_05.npy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_06.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_06.npy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_07.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_07.npy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_08.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_08.npy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_09.npy" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/model_svr.pkl_09.npy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/maj.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/jr_data_science-0.1.2-py3-none-any.whl" afterPath="$PROJECT_DIR$/dist/jr_data_science-0.1.2-py3-none-any.whl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/jr_data_science-0.1.2.tar.gz" afterPath="$PROJECT_DIR$/dist/jr_data_science-0.1.2.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/boston_house_price_prediction_with_svm.ipynb" afterPath="$PROJECT_DIR$/boston_house_price_prediction_with_svm/boston_house_price_prediction_with_svm.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/data_science/functions_de_decouverte_de_fichiers.py" afterPath="$PROJECT_DIR$/build/lib/data_science/functions_de_decouverte_de_fichiers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/data_science/functions_pour_analyser_des_df.py" afterPath="$PROJECT_DIR$/build/lib/data_science/functions_pour_analyser_des_df.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/jr_data_science/__init__.py" afterPath="$PROJECT_DIR$/build/lib/jr_data_science/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/jr_data_science/functions_de_decouverte_de_fichiers.py" afterPath="$PROJECT_DIR$/build/lib/jr_data_science/functions_de_decouverte_de_fichiers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/jr_data_science/functions_de_stats_sur_df.py" afterPath="$PROJECT_DIR$/build/lib/jr_data_science/functions_de_stats_sur_df.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science.egg-info/PKG-INFO" afterPath="$PROJECT_DIR$/jr_data_science.egg-info/PKG-INFO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/__init__.py" afterPath="$PROJECT_DIR$/jr_data_science/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/functions_de_decouverte_de_fichiers.py" afterPath="$PROJECT_DIR$/jr_data_science/functions_de_decouverte_de_fichiers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jr_data_science/functions_de_stats_sur_df.py" afterPath="$PROJECT_DIR$/jr_data_science/functions_de_stats_sur_df.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikit_learn_examples.ipynb" afterPath="$PROJECT_DIR$/scikit_learn_examples.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikit_learn_examples_2.ipynb" afterPath="$PROJECT_DIR$/scikit_learn_examples_2.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maj.sh" afterPath="$PROJECT_DIR$/maj.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,6 +30,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="class_extra_pandas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jr_data_science/class_extra_pandas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,21 +52,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dependency_links.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jr_data_science.egg-info/dependency_links.txt">
+      <file leaf-file-name="envoyer_sur_pypi.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/envoyer_sur_pypi.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoyer_sur_pypi.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/envoyer_sur_pypi.sh">
+      <file leaf-file-name="maj.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/maj.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listes_grise_noire_pays.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/listes_grise_noire_pays.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,18 +87,8 @@
       <file leaf-file-name="maj.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maj.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entry_points.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jr_data_science.egg-info/entry_points.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -105,26 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SOURCES.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jr_data_science.egg-info/SOURCES.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top_level.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jr_data_science.egg-info/top_level.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,6 +120,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -212,8 +187,9 @@
         <option value="$PROJECT_DIR$/jr_data_science/functions_de_decouverte_de_fichiers.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/jr_data_science/__init__.py" />
-        <option value="$PROJECT_DIR$/maj.sh" />
         <option value="$PROJECT_DIR$/envoyer_sur_pypi.sh" />
+        <option value="$PROJECT_DIR$/maj.sh" />
+        <option value="$PROJECT_DIR$/maj.py" />
       </list>
     </option>
   </component>
@@ -322,21 +298,6 @@
               <item name="data-science" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-science" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="data-science" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-science" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-science" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-science" type="462c0819:PsiDirectoryNode" />
-              <item name="jr_data_science" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-science" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-science" type="462c0819:PsiDirectoryNode" />
-              <item name="jr_data_science.egg-info" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -378,6 +339,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32546496" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -387,7 +349,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.2732475" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43034825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -413,14 +375,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/imports.py" />
-    <entry file="file://$PROJECT_DIR$/scikit_learn_examples.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/envs/python35/lib/python3.5/site-packages/scipy/stats/stats.py" />
     <entry file="file://$PROJECT_DIR$/test2.py" />
     <entry file="file://$PROJECT_DIR$/tp_ppt.py" />
@@ -485,14 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jr_data_science/class_extra_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scikit_learn_examples.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -536,43 +482,11 @@
         <state relative-caret-position="259">
           <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
           <folding>
-            <element signature="e#48#220#0" expanded="false" />
-            <element signature="e#126#206#0" expanded="false" />
-            <element signature="e#266#447#1" expanded="false" />
-            <element signature="e#2162#2256#1" expanded="false" />
-            <element signature="e#2600#2638#1" expanded="false" />
-            <element signature="e#2976#3263#0" expanded="false" />
-            <element signature="e#2976#3114#1" expanded="false" />
-            <element signature="e#3297#3721#0" expanded="false" />
-            <element signature="e#3297#3429#1" expanded="false" />
-            <element signature="e#3749#3921#0" expanded="false" />
-            <element signature="e#3749#3901#1" expanded="false" />
-            <element signature="e#3952#4308#0" expanded="false" />
-            <element signature="e#3952#4050#1" expanded="false" />
-            <element signature="e#4154#4258#0" expanded="false" />
-            <element signature="e#4332#4511#0" expanded="false" />
-            <element signature="e#4332#4424#1" expanded="false" />
-            <element signature="e#4530#4830#0" expanded="false" />
-            <element signature="e#4530#4614#1" expanded="false" />
-            <element signature="e#4882#5683#0" expanded="false" />
-            <element signature="e#4882#4938#1" expanded="false" />
-            <element signature="e#5718#5970#0" expanded="false" />
-            <element signature="e#5718#5876#1" expanded="false" />
-            <element signature="e#6005#6275#0" expanded="false" />
-            <element signature="e#6005#6184#1" expanded="false" />
-            <element signature="e#6295#6457#1" expanded="false" />
-            <element signature="e#6642#6917#0" expanded="false" />
-            <element signature="e#6985#7349#0" expanded="false" />
-            <element signature="e#6985#7229#1" expanded="false" />
-            <element signature="e#7401#7751#0" expanded="false" />
-            <element signature="e#7401#7584#1" expanded="false" />
-            <element signature="e#7781#7912#0" expanded="false" />
-            <element signature="e#7781#7852#1" expanded="false" />
-            <element signature="e#7950#8087#0" expanded="false" />
-            <element signature="e#8122#8259#0" expanded="false" />
-            <element signature="e#8295#8605#0" expanded="false" />
-            <element signature="e#8295#8502#1" expanded="false" />
-            <element signature="e#8561#8592#0" expanded="false" />
+            <element signature="e#8722#8859#0" expanded="false" />
+            <element signature="e#8894#9031#0" expanded="false" />
+            <element signature="e#9067#9377#0" expanded="false" />
+            <element signature="e#9067#9274#1" expanded="false" />
+            <element signature="e#9333#9364#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -745,14 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jr_data_science.egg-info/PKG-INFO">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -819,6 +725,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jr_data_science/class_extra_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jr_data_science/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -827,10 +741,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/listes_grise_noire_pays.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/maj.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -838,8 +768,18 @@
     <entry file="file://$PROJECT_DIR$/envoyer_sur_pypi.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
