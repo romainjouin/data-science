@@ -98,7 +98,7 @@ def help_change_col_name(df):
     """
     
     When we have a dataframe with strange column names, 
-    it may be useful to create a directory with keys being simpler, and values pointing to these
+    it may be useful to create a dictionnary with keys being simpler, and values pointing to these
     strange columns name.
     This print a pseudo code for creating such a dictionnary :
     the values are outputed to the screen, so that it can be copy-pasted into
@@ -194,6 +194,13 @@ def white_rotate():
 
 
 def global_imports(modulename,shortname = None, asfunction = False):
+    """
+    No tested : function to import a module as a global name.
+    :param modulename:
+    :param shortname:
+    :param asfunction:
+    :return:
+    """
     if shortname is None:
         shortname = modulename
     if asfunction is False:

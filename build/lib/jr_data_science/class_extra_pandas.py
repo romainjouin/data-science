@@ -158,4 +158,23 @@ class extra(pd.DataFrame):
                     print("e=", e)
                     pass
 
+    def get_palette(self, series, palette="deep", palette_order=None):
+        """
+        Retourne une palette sns pour une série.
+
+        :param palette:
+        :param palette_order:
+        :return:
+        """
+        palette = sns.color_palette(palette, len(series))
+        if palette_order and (len(palette_order) == len(palette)):
+            return [palette[i] for i in palette_order]
+        return palette
+
+    def plot_categorical(self):
+        for col in self.give_categorical_columns():
+            to_plot = df[col].value_counts(dropna=False)
+            if len(to_plot) > 1:
+                plt.figure()
+                to_plot.plot.barh(title=col, color=self.get_palette(df[col]))
 
